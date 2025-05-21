@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/Tablero.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/Barco.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/Orientacion.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/ResultadoDisparo.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/TipoBarco.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/JuegoBatallaNaval.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/Jugador.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/jugadores/JugadorMaquina.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/jugadores/JugadorHumano.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/barcos/Acorazado.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/barcos/Crucero.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/barcos/Destructor.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/barcos/Lancha.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/barcos/Portaaviones.java</file>
+            <file>file:/C:/Users/User/Documents/NetBeansProjects/BatallaNaval/src/batalla/barcos/Submarino.java</file>
+        </group>
+    </open-files>
+</project-private>
