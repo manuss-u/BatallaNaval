@@ -29,7 +29,14 @@ public class JuegoBatallaNaval extends JFrame {
     private JButton[][] botonesJugador;
     private JButton[][] botonesMaquina;
     private JPanel panelPuntuacion;
-
+    
+    private ImageIcon imgPortaaviones;
+    private ImageIcon imgAcorazado;
+    private ImageIcon imgCrucero;
+    private ImageIcon imgSubmarino;
+    private ImageIcon imgDestructor;
+    private ImageIcon imgLancha;
+    
     // Lógica de colocación y disparo
     private transient List<Barco> flotaJugador;
     private List<Point> disparosDisponiblesMaquina;
@@ -86,6 +93,14 @@ public class JuegoBatallaNaval extends JFrame {
     }
 
     private void inicializarInterfaz() {
+        
+        imgPortaaviones = new ImageIcon(getClass().getResource("/batalla/imagenes/portaaviones.png"));
+        imgAcorazado    = new ImageIcon(getClass().getResource("/batalla/imagenes/acorazado.png"));
+        imgCrucero      = new ImageIcon(getClass().getResource("/batalla/imagenes/crucero.png"));
+        imgSubmarino    = new ImageIcon(getClass().getResource("/batalla/imagenes/submarino.png"));
+        imgDestructor   = new ImageIcon(getClass().getResource("/batalla/imagenes/destructor.png"));
+        imgLancha       = new ImageIcon(getClass().getResource("/batalla/imagenes/lancha.png"));
+
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -147,7 +162,7 @@ public class JuegoBatallaNaval extends JFrame {
 
         JButton botonHistorial = new JButton("Histórico");
         botonHistorial.setAlignmentX(Component.CENTER_ALIGNMENT);
-        botonHistorial.addActionListener(_ -> mostrarHistorial());
+        botonHistorial.addActionListener(e -> mostrarHistorial());
 
         panelControl.add(Box.createVerticalGlue());
         panelControl.add(botonOrientacion);
@@ -206,13 +221,13 @@ public class JuegoBatallaNaval extends JFrame {
                             limpiarVistaPrevia();
                         }
                     });
-                    btn.addActionListener(_ -> {
+                    btn.addActionListener(e -> {
                         limpiarVistaPrevia();
                         manejarColocacion(rr, cc);
                     });
                     botonesJugador = botones;
                 } else {
-                    btn.addActionListener(_ -> manejarDisparo(rr, cc));
+                    btn.addActionListener(e -> manejarDisparo(rr, cc));
                     botonesMaquina = botones;
                 }
                 botones[r][c] = btn;
@@ -366,7 +381,7 @@ public class JuegoBatallaNaval extends JFrame {
                 try {
                     // Intentar parsear con formato personalizado
                     fecha = LocalDateTime.parse(p[1], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
-                } catch (Exception _) {
+                } catch (Exception e) {
                     // Si falla, usar ISO
                     fecha = LocalDateTime.parse(p[1], DateTimeFormatter.ISO_LOCAL_DATE_TIME);
                 }
